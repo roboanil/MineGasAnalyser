@@ -1,0 +1,42 @@
+﻿<Window x:Class="GDA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Height="700"
+        Width="860"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Icon="GDAaa.ico">
+    <Canvas Name="iEnclo">
+        <Menu Name="iMainMenu"
+              Height="22"
+              Width="860"
+              Background="#FFCDC7C7">
+            <MenuItem Header="Configure">
+                <MenuItem Name="ip" Header="Input Folder"
+                          Click="Inp" />
+                <MenuItem Name="op" Header="Output Folder"
+                          Click="Out" />
+                <MenuItem Header="Exit"
+                          Click="Exi" />
+            </MenuItem>
+            <MenuItem Header="Switch">
+                <MenuItem Name="ma" Header="Manual"
+                          Click="Man" />
+                <MenuItem Name="sa" Header="Semi-Automonous"
+                          Click="Semi" />
+                <MenuItem Name="au"
+                          Header="Automonous"
+                          Click="Auto" />
+            </MenuItem>
+            <MenuItem Header="Help"
+                      Click="Hel" />
+            <MenuItem Header="Login"            Margin="645,0,0,0"
+                      IsEnabled="False" />
+        </Menu>
+        <Canvas Name="Host_Canvas"
+                Margin="0,22,0,0">
+            
+        </Canvas>
+    </Canvas>
+</Window>
